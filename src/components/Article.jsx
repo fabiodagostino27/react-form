@@ -1,5 +1,5 @@
 export const Article = (props) => {
     return (
-        <li>{props.article}</li>
+        <li className="list-group-item">{props.article}</li>
     )
 }
