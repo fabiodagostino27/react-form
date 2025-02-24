@@ -12,7 +12,7 @@ export const Main = (props) => {
         <main className="container">
             <h3>Ecco gli ultimi articoli:</h3>
             <ul className="list-group list-group-flush mb-4"> 
-                {articlesArray.map((element, i) => <Article key={i} article={element}/>)}
+                {articlesArray.map((element, i) => <Article key={i} articleIndex={i} article={element} articlesArray={articlesArray} setArticlesArray={setArticlesArray}/>)}
             </ul>
             <Form newArticle={newArticle} setNewArticle={setNewArticle} articlesArray={articlesArray} setArticlesArray={setArticlesArray}/>
         </main>

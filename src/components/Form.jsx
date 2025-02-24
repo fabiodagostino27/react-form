@@ -4,7 +4,7 @@ export const Form = (props) => {
     const handleSubmit = () => {
         event.preventDefault();
         setArticlesArray([...articlesArray, newArticle]);
-        console.log(articlesArray)
+        setNewArticle("")
     }
 
     return (
