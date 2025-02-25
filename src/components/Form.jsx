@@ -1,8 +1,8 @@
 export const Form = (props) => {
     const {newArticle, setNewArticle, articlesArray, setArticlesArray} = props;
     
-    const handleSubmit = () => {
-        event.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
         setArticlesArray([...articlesArray, newArticle]);
         setNewArticle("")
     }

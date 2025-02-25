@@ -7,9 +7,7 @@ export const Article = (props) => {
     };
 
     const editArticle = (i) => {
-        let articleToEdit = articlesArray[i];
         const newTitle = prompt("Modifica il titolo dell'articolo.");
-        articleToEdit = newTitle;
         const updatedArray = [...articlesArray];
         updatedArray[i] = newTitle;
         setArticlesArray(updatedArray)
