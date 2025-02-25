@@ -4,7 +4,7 @@ import { Form } from "./Form";
 
 export const Main = (props) => {
     const articles = props.articles;
-
+    
     const [articlesArray, setArticlesArray] = useState(articles);
     const [newArticle, setNewArticle] = useState("");
 
